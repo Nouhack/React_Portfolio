@@ -1,5 +1,5 @@
 import React from "react";
-import { Row, Col, Image, Accordion, Card } from "react-bootstrap";
+import { Row, Col, Accordion, Card } from "react-bootstrap";
 import "./LogoDescription.css";
 import "aos/dist/aos.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -19,7 +19,7 @@ const Projects = ({ rr }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            padding: "40px"
+            padding: "40px",
           }}
         >
           <h2 className="logo">Projects</h2>{" "}
@@ -39,7 +39,7 @@ const Projects = ({ rr }) => {
               style={{
                 cursor: "pointer",
                 backgroundColor: "rgba(28, 196, 157, 0.07)",
-                fontWeight: "bolder"
+                fontWeight: "bolder",
               }}
             >
               Category 1
@@ -52,7 +52,7 @@ const Projects = ({ rr }) => {
                       style={{
                         width: "100%",
                         height: "500px",
-                        objectFit: "cover"
+                        objectFit: "cover",
                       }}
                       src="https://fakeimg.pl/600x500/1cc49d,128/ffffff/?text=Image%201&font=lobster"
                       thumbnail
@@ -64,7 +64,7 @@ const Projects = ({ rr }) => {
                       style={{
                         width: "100%",
                         height: "500px",
-                        objectFit: "cover"
+                        objectFit: "cover",
                       }}
                       src="https://fakeimg.pl/600x500/5f1cc4,128/ffffff/?text=Image%202&font=lobster"
                       thumbnail
@@ -81,7 +81,7 @@ const Projects = ({ rr }) => {
               style={{
                 cursor: "pointer",
                 backgroundColor: "rgba(28, 196, 157, 0.07)",
-                fontWeight: "bolder"
+                fontWeight: "bolder",
               }}
             >
               Category 2
@@ -94,7 +94,7 @@ const Projects = ({ rr }) => {
                       style={{
                         width: "100%",
                         height: "500px",
-                        objectFit: "cover"
+                        objectFit: "cover",
                       }}
                       src="https://fakeimg.pl/600x500/c41c8c,128/ffffff/?text=Image%201&font=lobster"
                       thumbnail
@@ -106,7 +106,7 @@ const Projects = ({ rr }) => {
                       style={{
                         width: "100%",
                         height: "500px",
-                        objectFit: "cover"
+                        objectFit: "cover",
                       }}
                       src="https://fakeimg.pl/600x500/c41c1c,128/ffffff/?text=Image%202&font=lobster"
                       thumbnail

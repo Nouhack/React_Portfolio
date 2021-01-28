@@ -8,20 +8,17 @@ const LogoDescription = ({
   HomeExec,
   ProjectExec,
   TeamExec,
-  rr
+  rr,
 }) => {
-  const [screenWidth, setscreenWidth] = React.useState(window.innerWidth);
-  const [screenheight, setscreenheight] = React.useState(window.innerHeight);
-
   return (
     <div
       ref={rr}
       style={{
         height: "100vh",
 
-        backgroundImage: `url(https://images.pexels.com/photos/6008939/pexels-photo-6008939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=${screenheight}&w=${screenWidth})`,
+        backgroundImage: `url(https://images.pexels.com/photos/6008939/pexels-photo-6008939.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=${window.innerHeight}&w=${window.innerWidth})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "cover"
+        backgroundSize: "cover",
       }}
     >
       <div>
@@ -41,7 +38,7 @@ const LogoDescription = ({
           justifyContent: "flex-end",
           width: "100%",
           height: "55%",
-          textAlign: "center"
+          textAlign: "center",
         }}
       >
         <h3
@@ -49,7 +46,7 @@ const LogoDescription = ({
             color: "white",
             backgroundColor: "rgba(41, 43, 44, 0.4)",
             padding: "50px",
-            borderRadius: "10px"
+            borderRadius: "10px",
           }}
           className="logo"
         >
@@ -64,7 +61,7 @@ const LogoDescription = ({
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
-          justifyContent: "flex-end"
+          justifyContent: "flex-end",
         }}
       >
         <div>
