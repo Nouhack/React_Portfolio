@@ -7,7 +7,7 @@ import "./LogoDescription.css";
 const AboutUs = ({ rr }) => {
   return (
     <Row>
-      <Col md={12} style={{ backgroundColor: "white" }}>
+      <Col md={12}>
         <div
           data-aos="fade-up"
           data-aos-duration={2000}
@@ -19,7 +19,7 @@ const AboutUs = ({ rr }) => {
             flexDirection: "column",
             alignItems: "center",
             justifyContent: "center",
-            padding: "40px"
+            padding: "40px",
           }}
         >
           <h2 className="logo"> About us </h2>{" "}
@@ -37,7 +37,7 @@ const AboutUs = ({ rr }) => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
           <img
@@ -59,10 +59,10 @@ const AboutUs = ({ rr }) => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
-          <h5 style={{ lineHeight: "26pt" }}>
+          <h5 style={{ lineHeight: "26pt", color: "white" }}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo tempora
             cumque eligendi in nostrum labore omnis quaerat.
           </h5>

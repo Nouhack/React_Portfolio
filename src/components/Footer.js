@@ -10,10 +10,10 @@ const Footer = () => {
         style={{
           border: "1px solid grey",
           height: "50px",
-          textAlign: "right"
+          textAlign: "right",
         }}
       >
-        <p style={{ marginTop: "10px" }}>
+        <p style={{ marginTop: "10px", color: "white" }}>
           Created By{" "}
           <a href="https://github.com/Nouhack" rel="noopener" target="_blank">
             Nouhack

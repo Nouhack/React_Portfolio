@@ -38,7 +38,7 @@ const Projects = ({ rr }) => {
               eventKey="0"
               style={{
                 cursor: "pointer",
-                backgroundColor: "rgba(28, 196, 157, 0.07)",
+                backgroundColor: "transparent",
                 fontWeight: "bolder",
               }}
             >
@@ -80,14 +80,14 @@ const Projects = ({ rr }) => {
               eventKey="1"
               style={{
                 cursor: "pointer",
-                backgroundColor: "rgba(28, 196, 157, 0.07)",
+                backgroundColor: "transparent",
                 fontWeight: "bolder",
               }}
             >
               Category 2
             </Accordion.Toggle>
             <Accordion.Collapse eventKey="1">
-              <Card.Body>
+              <Card.Body style={{ backgroundColor: "transparent" }}>
                 <Row>
                   <Col md={6}>
                     <LazyLoadImage

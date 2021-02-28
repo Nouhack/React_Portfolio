@@ -1,6 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import AOS from "aos";
+import { useState } from "react";
 
 import LogoDescription from "./components/LogoDescription";
 import AboutUs from "./components/AboutUs";
@@ -15,6 +16,8 @@ export default function App() {
   const FeaturesRef = React.useRef(null);
   const ProjectRef = React.useRef(null);
   const TeamRef = React.useRef(null);
+
+  const [showContent, setshowContent] = useState(false);
 
   React.useEffect(() => {
     AOS.init({ once: true });
@@ -40,10 +43,12 @@ export default function App() {
       style={{
         scrollBehavior: "smooth",
         backgroundColor: "white",
-        padding: "0px"
+        padding: "0px",
       }}
     >
       <LogoDescription
+        setisLoaded={setshowContent}
+        isLoaded={showContent}
         rr={HomeRef}
         HomeExec={executeScrollHome}
         AboutExec={executeScrollAbout}
@@ -51,13 +56,15 @@ export default function App() {
         ProjectExec={executeScrollProject}
         TeamExec={executeScrollTeam}
       />
-      <Container style={{ backgroundColor: "white" }}>
-        <AboutUs rr={AboutRef} />
-        <OurFeatures rr={FeaturesRef} />
-        <Projects rr={ProjectRef} />
-        <Team rr={TeamRef} />
-        <Footer />
-      </Container>
+      {showContent && (
+        <Container style={{ backgroundColor: "white" }}>
+          <AboutUs rr={AboutRef} />
+          <OurFeatures rr={FeaturesRef} />
+          <Projects rr={ProjectRef} />
+          <Team rr={TeamRef} />
+          <Footer />
+        </Container>
+      )}
     </Container>
   );
 }

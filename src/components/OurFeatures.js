@@ -21,11 +21,11 @@ const OurFeatures = ({ rr }) => {
             alignItems: "center",
             justifyContent: "center",
             padding: "40px",
-            textAlign: "center"
+            textAlign: "center",
           }}
         >
           <h2 className="logo">Our Services </h2> <br />
-          <h5 style={{ lineHeight: "26pt" }}>
+          <h5 style={{ lineHeight: "26pt", color: "white" }}>
             Our Company provides many software developement services and
             features around web and mobile developement areas using recent
             technologies. below you can find services list that we provide :
@@ -43,11 +43,11 @@ const OurFeatures = ({ rr }) => {
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
           <p style={{ fontWeight: "bolder" }}>Technology 1 :</p>
-          <ul className="check-list">
+          <ul className="check-list" style={{ color: "white" }}>
             <li>Example 1</li>
             <br />
 
@@ -122,11 +122,11 @@ const OurFeatures = ({ rr }) => {
             display: "flex",
             flexDirection: "column",
             alignItems: "flex-start",
-            justifyContent: "center"
+            justifyContent: "center",
           }}
         >
           <p style={{ fontWeight: "bolder" }}>Technology 2 :</p>
-          <ul className="check-list">
+          <ul className="check-list" style={{ color: "white" }}>
             <li>Example 1</li>
             <br />
 
